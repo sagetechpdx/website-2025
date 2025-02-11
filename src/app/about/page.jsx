@@ -26,7 +26,7 @@ function Culture() {
           Unlike many other repair companies, our prices are clearly listed on our website. Nobody likes getting a surprise bill, so we are upfront about what a repair will cost BEFORE starting it.
           </GridListItem>
           <GridListItem title="You-centric" invert>
-          We know your life is hectic and when your tech breaks down it throws a wrench in everything, which is why we offer more flexible hours than other companies and a complimentary pick-up and drop-off service. If Monday-Friday doesn't work for you, just let us know and we'll be happy to arrange a weekend pick-up or drop-off!
+          We know your life is hectic and when your tech breaks down it throws a wrench in everything, which is why we offer more flexible hours than other companies and a complimentary pick-up and drop-off service. If Monday-Friday doesn’t work for you, just let us know and we’ll be happy to arrange a weekend pick-up or drop-off!
           </GridListItem>
           <GridListItem title="Empowerment" invert>
           We believe that fully understanding your technology puts you in control of your digital world. In an online landscape filled with bad actors and security threats, knowledge is your best defense. That’s why we go beyond just repairs—we take the time to educate you on using your devices safely, securely, and with confidence.
@@ -112,7 +112,7 @@ export default async function About() {
     <>
       <PageIntro eyebrow="About us" title="Sick of being treated like just a number?">
         <p>
-        When dealing with corporate tech support companies, you're often treated as nothing more than a customer ID number. You may be bounced around to several different technicians who aren't familiar with you or your situation. At Sage Tech, you will deal with the same industry-certified technician for the duration of your repair.
+        When dealing with corporate tech support companies, you’re often treated as nothing more than a customer ID number. You may be bounced around to several different technicians who aren’t familiar with you or your situation. At Sage Tech, you will deal with the same industry-certified technician for the duration of your repair.
         </p>
       </PageIntro>
       <Container className="mt-16">
