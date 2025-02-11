@@ -88,7 +88,7 @@ export default function Example() {
               <li className="flex gap-x-3">
                 <LockClosedIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                 <span>
-                  <strong className="font-semibold text-gray-900">2. Free Estimate & Diagnosis</strong> We will determine the cause of the problem and give you an estimate of the cost. You don't pay a cent if you decide not to have the repair done.
+                  <strong className="font-semibold text-gray-900">2. Free Estimate & Diagnosis</strong> We will determine the cause of the problem and give you an estimate of the cost. You don’t pay a cent if you decide not to have the repair done.
                 </span>
               </li>
               <li className="flex gap-x-3">
