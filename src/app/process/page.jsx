@@ -1,31 +1,20 @@
-import { Blockquote } from '@/components/Blockquote'
-import { ContactSection } from '@/components/ContactSection'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { GridList, GridListItem } from '@/components/GridList'
-import { GridPattern } from '@/components/GridPattern'
-import { List, ListItem } from '@/components/List'
+
 import { PageIntro } from '@/components/PageIntro'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { Container } from '@/components/Container'
+import { FadeIn } from '@/components/FadeIn'
+import { GridList, GridListItem } from '@/components/GridList'
+import { GridPattern } from '@/components/GridPattern'
+import { List, ListItem } from '@/components/List'
+import { Blockquote } from '@/components/Blockquote'
+import { ContactSection } from '@/components/ContactSection'
 
 
 export default function Example() {
@@ -44,14 +33,11 @@ export default function Example() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-          Our Process: Simple, Transparent, Hassle-Free
-          </h1>
-          <p className="mt-6 text-xl/8 text-gray-700">
-            We strive to provide excellent communication at each and every step of the repair process!
-          </p>
-        </div>
+      <PageIntro eyebrow="Our process" title="Simple, Transparent, Hassle-Free">
+        <p>
+        We strive to provide excellent communication at each and every step of the repair process!
+        </p>
+      </PageIntro>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
           <div className="relative lg:order-last lg:col-span-5">
             <svg
@@ -157,28 +143,4 @@ export const metadata = {
   title: 'Our Process',
   description:
     'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
-}
-
-export function Process() {
-  return (
-    <>
-      <PageIntro eyebrow="Our process" title="How we work">
-        <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
-        </p>
-      </PageIntro>
-
-      <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
-        <Discover />
-        <Build />
-        <Deliver />
-      </div>
-
-      <Values />
-
-      <ContactSection />
-    </>
-  )
 }
