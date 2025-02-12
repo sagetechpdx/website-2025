@@ -8,49 +8,52 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
+
+import logoWindows from '@/images/brands/windows.png'
+import logoApple from '@/images/brands/Apple.png'
+import logoDell from '@/images/brands/Dell.png'
+import logoHP from '@/images/brands/HP.png'
+import logoSamsung from '@/images/brands/Samsung.png'
+import logoLenovo from '@/images/brands/Lenovo.png'
+import logoAsus from '@/images/brands/Asus.png'
+import logoAcer from '@/images/brands/Acer.png'
+
+
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Microsoft Windows', logoWindows],
+  ['Apple', logoApple],
+  ['Dell', logoDell],
+  ['HP', logoHP],
+  ['Samsung', logoSamsung],
+  ['Lenovo', logoLenovo],
+  ['Asus', logoAsus],
+  ['Acer', logoAcer],
 ]
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 mx-auto lg:max-w-7xl rounded-4xl bg-teal-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+          <h2 className="text-center font-display text-lg tracking-wider text-white sm:text-left">
           Some of the many brands we service
           </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
+          <div className="h-px flex-auto bg-white" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="mt-10 grid grid-cols-4 gap-x-4 lg:gap-x-8 gap-y-10 lg:gap-y-0 lg:grid-cols-8"
           >
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={client} width={100} />
                 </FadeIn>
               </li>
             ))}
@@ -140,23 +143,17 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Mac & PC Hardware Repair/Upgrades">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            Is your computer running slowly or not running at all? Is your computer infected with viruses or malware? We will diagnose the problem and perform the necessary hardware or software repairs.
             </ListItem>
             <ListItem title="Software Installation and Troubleshooting">
               We have a team of skilled developers who are experts in the latest
               app frameworks, like Angular 1 and Google Web Toolkit.
             </ListItem>
             <ListItem title="Networking Setup and Support">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            Do you have Wi-Fi enabled devices that need to connect to the Internet? We can set up a new modem, router, access point, or troubleshoot problems in your existing network!
             </ListItem>
             <ListItem title="Data Recovery">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            Have you lost files because of a hardware or software failure? We can reunite you with your lost data!
             </ListItem>
             <ListItem title="Virus and Malware Removal">
               At Studio we understand the importance of having a robust and
@@ -203,7 +200,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'John Doe', logo: logoPhobiaDark }}
+        client={{ name: 'John Doe', logo: logoHP }}
       >
         The team at Studio went above and beyond with our onboarding, even
         finding a way to access the user’s microphone without triggering one of

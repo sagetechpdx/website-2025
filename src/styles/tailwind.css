@@ -38,4 +38,11 @@
   --font-display--font-variation-settings: 'wdth' 125;
 
   --font-display-length: 2;
+
+    --color-gold: #bf9f4c;
+    --color-dark: #152c18;
+    --color-med: #314837;
+    --color-light: #b9b59f;
+    --color-brwn: #6f634d;
+
 }
