@@ -37,10 +37,10 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="mt-24 mx-auto lg:max-w-7xl rounded-4xl bg-teal-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 mx-auto lg:max-w-7xl rounded-4xl bg-dark py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-lg tracking-wider text-white sm:text-left">
+          <h2 className="text-center font-display text-lg tracking-wider text-gold sm:text-left">
           Some of the many brands we service
           </h2>
           <div className="h-px flex-auto bg-white" />
@@ -91,22 +91,22 @@ function CaseStudies({ caseStudies }) {
                     />
                   </Link>
                 </h3>
-                <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
+                <p className="mt-6 flex gap-x-2 text-sm text-gold">
                   <time
                     dateTime={caseStudy.date.split('-')[0]}
                     className="font-semibold"
                   >
                     {caseStudy.date.split('-')[0]}
                   </time>
-                  <span className="text-neutral-300" aria-hidden="true">
+                  <span className="text-gold" aria-hidden="true">
                     /
                   </span>
                   <span>Case study</span>
                 </p>
-                <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
+                <p className="mt-6 font-display text-2xl font-semibold text-gold">
                   {caseStudy.title}
                 </p>
-                <p className="mt-4 text-base text-neutral-600">
+                <p className="mt-4 text-base text-gold">
                   {caseStudy.description}
                 </p>
               </article>
@@ -185,10 +185,10 @@ export default async function Home() {
     <>  
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-neutral-950 sm:text-7xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-dark sm:text-7xl">
           We take the stress out of tech support.
           </h1>
-          <p className="mt-6 text-xl text-neutral-600">
+          <p className="mt-6 text-xl text-dark">
           Transparency and honesty are at the heart of what we do. From the initial quote to the final fix, we ensure our clients know exactly what to expect with no hidden costs or surprises. Our straightforward approach has earned us a reputation for reliability and trustworthiness, making us the go-to choice for residential and small business customers alike.
           </p>
         </FadeIn>

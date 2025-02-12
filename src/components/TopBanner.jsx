@@ -4,7 +4,7 @@ import { FadeIn } from '@/components/FadeIn'
 
 export function TopBanner(){
     return (
-<header class="flex flex-row w-full h-auto justify-evenly align-center py-2 gap-5 bg-neutral-950 font-semibold text-white sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)]">
+<header class="flex flex-row w-full h-auto justify-evenly align-center py-2 gap-5 bg-dark font-semibold text-gold sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)]">
     {/* Socials */}
 
           <div class="flex items-center justify-center gap-5 ">
@@ -22,21 +22,21 @@ export function TopBanner(){
 
     {/* Email */}
         
-        <a class="flex flex-row items-center justify-center w-auto gap-2 hover:text-green-700" href="mailto:info@sagetech.support">
+        <a class="flex flex-row items-center justify-center w-auto gap-2 hover:text-light" href="mailto:info@sagetech.support">
             <img class="w-4" src="/icons/mail.png" alt="Email Us" />
             <div class="hidden md:flex">info@sagetech.support</div>
         </a>
 
 
     {/* Phone */}
-        <a class="flex flex-row items-center justify-center w-auto gap-2 hover:text-green-700" href="tel:5034546438">
+        <a class="flex flex-row items-center justify-center w-auto gap-2 hover:text-light" href="tel:5034546438">
             <img class="w-4" src="/icons/call.png" alt="Call Us" />
             <div class="hidden md:flex">(503) 454-6438</div>
         </a>
 
     {/* SMS */}
 
-        <a class="flex flex-row items-center justify-center gap-2 hover:text-green-700" href="sms:15034546438">
+        <a class="flex flex-row items-center justify-center gap-2 hover:text-light" href="sms:15034546438">
             <img class="w-4" src="/icons/chat.png" alt="Text Us" />
             <span class="hidden md:inline">(503) 454-6438</span>
         </a>
