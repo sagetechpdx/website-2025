@@ -43,7 +43,7 @@ function Clients() {
           <h2 className="text-center font-display text-lg tracking-wider text-gold sm:text-left">
           Some of the many brands we service
           </h2>
-          <div className="h-px flex-auto bg-white" />
+          <div className="h-px flex-auto" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
@@ -91,7 +91,7 @@ function CaseStudies({ caseStudies }) {
                     />
                   </Link>
                 </h3>
-                <p className="mt-6 flex gap-x-2 text-sm text-gold">
+                <p className="mt-6 flex gap-x-2 text-sm">
                   <time
                     dateTime={caseStudy.date.split('-')[0]}
                     className="font-semibold"
@@ -103,10 +103,10 @@ function CaseStudies({ caseStudies }) {
                   </span>
                   <span>Case study</span>
                 </p>
-                <p className="mt-6 font-display text-2xl font-semibold text-gold">
+                <p className="mt-6 font-display text-2xl font-semibold">
                   {caseStudy.title}
                 </p>
-                <p className="mt-4 text-base text-gold">
+                <p className="mt-4 text-base">
                   {caseStudy.description}
                 </p>
               </article>
@@ -185,10 +185,10 @@ export default async function Home() {
     <>  
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-dark sm:text-7xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] sm:text-7xl">
           We take the stress out of tech support.
           </h1>
-          <p className="mt-6 text-xl text-dark">
+          <p className="mt-6 text-xl">
           Transparency and honesty are at the heart of what we do. From the initial quote to the final fix, we ensure our clients know exactly what to expect with no hidden costs or surprises. Our straightforward approach has earned us a reputation for reliability and trustworthiness, making us the go-to choice for residential and small business customers alike.
           </p>
         </FadeIn>

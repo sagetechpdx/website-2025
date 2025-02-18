@@ -4,7 +4,7 @@ import { FadeIn } from '@/components/FadeIn'
 
 export function TopBanner(){
     return (
-<header class="flex flex-row w-full h-auto justify-evenly align-center py-2 gap-5 bg-dark font-semibold text-gold sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)]">
+<header class="flex flex-row w-full h-auto justify-evenly align-center pt-2 gap-5 bg-dark font-semibold text-light sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)]">
     {/* Socials */}
 
           <div class="flex items-center justify-center gap-5 ">

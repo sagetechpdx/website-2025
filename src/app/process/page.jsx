@@ -20,7 +20,7 @@ import { ContactSection } from '@/components/ContactSection'
 
 export default function Example() {
   return (
-    <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden py-24 sm:py-32">
       <div
         aria-hidden="true"
         className="absolute -top-80 left-[max(6rem,33%)] -z-10 transform-gpu blur-3xl sm:left-1/2 md:top-20 lg:ml-20 xl:top-3 xl:ml-56"
@@ -58,7 +58,7 @@ export default function Example() {
               <rect fill="url(#e87443c8-56e4-4c20-9111-55b82fa704e3)" width="100%" height="100%" strokeWidth={0} />
             </svg>
             <figure className="border-l border-indigo-600 pl-8">
-              <blockquote className="text-xl/8 font-semibold tracking-tight text-gray-900">
+              <blockquote className="text-xl/8 font-semibold tracking-tight">
                 <p>
                 "Steve is the nicest guy! He responded immediately to my search, stayed in communication by providing updates along the way, was prompt and friendly,  and the personal pick up and delivery is amazing!"
                 </p>
@@ -67,52 +67,52 @@ export default function Example() {
                 <img
                   alt=""
                src="/blank.png"
-                  className="mt-1 size-10 flex-none rounded-full bg-gray-50"
+                  className="mt-1 size-10 flex-none rounded-full "
                 />
                 <div className="text-sm/6">
-                  <div className="font-semibold text-gray-900">Karin</div>
-                  <div className="text-gray-600">Portland, OR</div>
+                  <div className="font-semibold">Karin</div>
+                  <div >Portland, OR</div>
                 </div>
               </figcaption>
             </figure>
           </div>
-          <div className="max-w-xl text-base/7 text-gray-700 lg:col-span-7">
-            <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+          <div className="max-w-xl text-base/7 lg:col-span-7">
+            <ul role="list" className="mt-8 max-w-xl space-y-8">
               <li className="flex gap-x-3">
                 <CloudArrowUpIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                 <span>
-                  <strong className="font-semibold text-gray-900">1. Appointment Scheduling</strong> The first step is to schedule either an on-site appointment, a remote support session, or a time to drop off the device.
+                  <strong className="font-semibold ">1. Appointment Scheduling</strong> The first step is to schedule either an on-site appointment, a remote support session, or a time to drop off the device.
                 </span>
               </li>
               <li className="flex gap-x-3">
                 <LockClosedIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                 <span>
-                  <strong className="font-semibold text-gray-900">2. Free Estimate & Diagnosis</strong> We will determine the cause of the problem and give you an estimate of the cost. You don’t pay a cent if you decide not to have the repair done.
+                  <strong className="font-semibold ">2. Free Estimate & Diagnosis</strong> We will determine the cause of the problem and give you an estimate of the cost. You don’t pay a cent if you decide not to have the repair done.
                 </span>
               </li>
               <li className="flex gap-x-3">
                 <ServerIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                 <span>
-                  <strong className="font-semibold text-gray-900">3. Repair & Updates</strong> Once approved, we begin the repair. Whether it’s a hardware fix, software troubleshooting, or a complex board-level repair, we keep you updated throughout the process.
+                  <strong className="font-semibold ">3. Repair & Updates</strong> Once approved, we begin the repair. Whether it’s a hardware fix, software troubleshooting, or a complex board-level repair, we keep you updated throughout the process.
                 </span>
               </li>
               <li className="flex gap-x-3">
                 <ServerIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                 <span>
-                  <strong className="font-semibold text-gray-900">4. Quality Check & Testing</strong> Before returning your device, we run thorough tests to ensure everything is working perfectly. If applicable, we also provide recommendations for keeping your device running smoothly.
+                  <strong className="font-semibold">4. Quality Check & Testing</strong> Before returning your device, we run thorough tests to ensure everything is working perfectly. If applicable, we also provide recommendations for keeping your device running smoothly.
                 </span>
               </li>
               <li className="flex gap-x-3">
                 <ServerIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                 <span>
-                  <strong className="font-semibold text-gray-900">5. Pick-Up or Delivery
+                  <strong className="font-semibold ">5. Pick-Up or Delivery
                   </strong> Once your device is repaired, you can pick it up at your convenience, or we can arrange a drop-off. We’ll review the repairs with you and answer any questions you have.
                 </span>
               </li>
               <li className="flex gap-x-3">
                 <ServerIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                 <span>
-                  <strong className="font-semibold text-gray-900">6. Post-repair</strong> We stand by our work and provide a 60-day warranty on all services. If you have any questions or concerns after the repair, we’re just a call or email away.
+                  <strong className="font-semibold ">6. Post-repair</strong> We stand by our work and provide a 60-day warranty on all services. If you have any questions or concerns after the repair, we’re just a call or email away.
                 </span>
               </li>
             </ul>

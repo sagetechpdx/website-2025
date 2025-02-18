@@ -106,7 +106,7 @@ function NavigationRow({ children }) {
   return (
     <div className="even:mt-px sm:bg-dark">
       <Container>
-        <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
+        <div className="grid grid-cols-1 sm:grid-cols-3">{children}</div>
       </Container>
     </div>
   )
@@ -116,10 +116,10 @@ function NavigationItem({ href, children }) {
   return (
     <Link
       href={href}
-      className="group relative isolate -mx-6 bg-light px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
+      className="group relative isolate -mx-6 bg-dark px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
     >
       {children}
-      <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+      <span className="absolute inset-y-0 -z-10 w-screen bg-dark opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
     </Link>
   )
 }
@@ -128,12 +128,14 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-gold">
       <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
         <NavigationItem href="/about">About Us</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
         <NavigationItem href="/process">Our Process</NavigationItem>
         <NavigationItem href="/blog">Blog</NavigationItem>
+      </NavigationRow>
+      <NavigationRow>
+        <NavigationItem href="/services">Services</NavigationItem>
+        <NavigationItem href="/pricing">Pricing</NavigationItem>
+        <NavigationItem href="/symptomchecker">PC Symptom Checker</NavigationItem>
       </NavigationRow>
     </nav>
   )
@@ -191,12 +193,12 @@ function RootLayoutInner({ children }) {
           layout
           id={panelId}
           style={{ height: expanded ? 'auto' : '0.5rem' }}
-          className="relative z-50 overflow-hidden bg-light pt-2"
+          className="relative z-50 overflow-hidden bg-dark-500 pt-2"
           aria-hidden={expanded ? undefined : 'true'}
           inert={expanded ? undefined : ''}
         >
-          <motion.div layout className="bg-neutral-800">
-            <div ref={navRef} className="bg-light pt-14 pb-16">
+          <motion.div layout className="bg-pink-800">
+            <div ref={navRef} className="bg-pink-800 pt-16 pb-16">
               <Header
                 invert
                 panelId={panelId}
@@ -212,7 +214,7 @@ function RootLayoutInner({ children }) {
               />
             </div>
             <Navigation />
-            <div className="relative bg-light before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
+            <div className="relative bg-blue-500 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:grid-cols-2 sm:pt-16">
                   <div>
@@ -240,7 +242,7 @@ function RootLayoutInner({ children }) {
       <motion.div
         layout
         style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-        className="relative flex flex-auto overflow-hidden bg-light pt-14"
+        className="relative flex flex-auto overflow-hidden bg-orange-500 pt-14"
       >
         <motion.div
           layout
